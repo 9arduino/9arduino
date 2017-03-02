@@ -19,9 +19,9 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			if($text == 'Hello'){
 			
-				$messages = [
-				'type' => 'text',
-				'text' => $text
+				$messages = [ 'LED On'
+//				'type' => 'text',
+//				'text' => $text
 			];
 				
 			}
