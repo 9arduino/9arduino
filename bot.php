@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 				//'55' => $text
-				'text' => "555"
+				'text' => $text
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
