@@ -23,7 +23,11 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => 'Hello world'
 			];
-				
+			}
+			else{
+				$messages = [ 
+				'type' => 'text',
+				'text' => 'ไม่มีคำสั่งจ่าา'			
 			}
 			
 
