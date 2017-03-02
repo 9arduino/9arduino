@@ -21,13 +21,12 @@ if (!is_null($events['events'])) {
 			
 				$messages = [ 
 				'type' => 'text',
-				'text' => 'Hello world'
-			];
+				'text' => 'Hello world'];
 			}
 			else{
 				$messages = [ 
 				'type' => 'text',
-				'text' => 'ไม่มีคำสั่งจ่าา'			
+				'text' => 'ไม่มีคำสั่งจ่าา'];	
 			}
 			
 
