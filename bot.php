@@ -23,6 +23,12 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => 'Hello world'];
 			}
+			else if($text == 'เมียเวลา?'){
+			$time = date("Y-m-d H:i:s");
+				$messages = [ 
+				'type' => 'text',
+				'text' => $time];
+			}
 			else{
 				$messages = [ 
 				'type' => 'text',
