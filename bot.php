@@ -37,10 +37,10 @@ if (!is_null($events['events'])) {
 				$ret = curl_exec($ch);
 				curl_close($ch);
 			}
-			else if($text == 'ปิดไฟแล้วค่ะ'){
+			else if($text == 'ปิดไฟ'){
 				$messages = [ 
 				'type' => 'text',
-				'text' => 'ปิดไฟ'];
+				'text' => 'ปิดไฟแล้วค่ะ'];
 				$ch = curl_init('http://api.anto.io/channel/set/NDwULZBhm2TEnAapOLmanFE3zkm9bRqMrNmBTwnw/Botline/smartPlug01/1');
 				$ret = curl_exec($ch);
 				curl_close($ch);
