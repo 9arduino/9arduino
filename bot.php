@@ -29,6 +29,22 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => $time];
 			}
+			else if($text == 'เปิดไฟ'){
+				$messages = [ 
+				'type' => 'text',
+				'text' => 'เปิดไฟ'];
+				$ch = curl_init('http://api.anto.io/channel/set/NDwULZBhm2TEnAapOLmanFE3zkm9bRqMrNmBTwnw/Botline/LED1/1');
+				$ret = curl_exec($ch);
+				curl_close($ch);
+			}
+			else if($text == 'ปิดไฟ'){
+				$messages = [ 
+				'type' => 'text',
+				'text' => 'ปิดไฟ'];
+				$ch = curl_init('http://api.anto.io/channel/set/NDwULZBhm2TEnAapOLmanFE3zkm9bRqMrNmBTwnw/Botline/LED1/0');
+				$ret = curl_exec($ch);
+				curl_close($ch);
+			}
 			else{
 				$messages = [ 
 				'type' => 'text',
